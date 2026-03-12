@@ -1,0 +1,213 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="sr" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="sr" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="sr" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="sr" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="sr"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<title>Osnove Three.js</title>
+
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+
+			<div class="page cover-page">
+                <div class="page-content cover-content">
+
+                    <div class="cover-top-band">
+                        <div class="logo-row">
+                            <img src="pages/erasmus-logo-1.png" alt="Erasmus+" />
+                            <img src="pages/fm3 logo.png" alt="Logo projekta" />
+                            <img src="pages/ets.png" alt="Logo škole" />
+                        </div>
+                    </div>
+
+                    <div class="cover-main">
+                        <p class="cover-kicker">Priručnik za učenike</p>
+
+                        <h1>OSNOVE THREE.JS</h1>
+                        <h3>Uvod u 3D prikaz na webu, rad sa scenom i osnovni alati</h3>
+                        <p>Elektrotehnička škola „Nikola Tesla“, Niš</p>
+                        <div class="cover-line"></div>
+
+                        <div class="cover-info">
+                            <p><strong>Projekat:</strong><br/> Tvorci budućnosti: 3D veštine za sutrašnji svet</p>
+                            <p><strong>Napomena:</strong><br/> Ovaj priručnik je nastao kao rezultat mobilnosti u okviru Erasmus+ projekta.</p>
+                        </div>
+                    </div>
+
+                    <div class="cover-footer">
+                        
+                        <p><br/>Jelena Lukić i Dimitrije Krstić</p>
+                    </div>
+
+                </div>
+            </div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Šta je Three.js?</h2>
+					<p>Three.js je JavaScript biblioteka koja omogućava prikaz trodimenzionalne grafike u internet pretraživaču. Pomoću nje možemo praviti 3D scene, prikazivati objekte i modele, dodavati svetlo, kameru i animacije, kao i omogućiti korisniku interakciju sa sadržajem.</p>
+					<p>U ovom priručniku učenici će upoznati osnovne pojmove i korake potrebne za rad u biblioteci Three.js. Cilj je da razumeju kako nastaje jedna jednostavna 3D scena na webu i kako se njeni elementi povezuju u funkcionalnu celinu.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Osnovni delovi scene</h2>
+					<p>Da bi 3D prikaz radio, potrebno je napraviti scenu. U Three.js skoro svaki projekat počinje od nekoliko osnovnih elemenata koji zajedno grade prikaz u browseru.</p>
+					<ul>
+						<li><strong>Scene</strong>: prostor u kome se nalaze svi objekti</li>
+						<li><strong>Camera</strong>: određuje iz kog ugla posmatramo scenu</li>
+						<li><strong>Renderer</strong>: prikazuje scenu u internet pretraživaču</li>
+						<li><strong>Canvas</strong>: površina na kojoj se 3D sadržaj iscrtava</li>
+					</ul>
+					<p>Bez ova tri osnovna dela nije moguće formirati funkcionalnu 3D aplikaciju.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Kretanje kroz 3D prostor</h2>
+					<p>Kao i u svakom 3D okruženju, važno je razumeti kako se objekti raspoređuju u prostoru. Three.js koristi koordinatni sistem sa osama X, Y i Z, što omogućava precizno pozicioniranje elemenata u sceni.</p>
+					<ul>
+						<li><strong>X osa</strong>: kretanje levo i desno</li>
+						<li><strong>Y osa</strong>: kretanje gore i dole</li>
+						<li><strong>Z osa</strong>: kretanje napred i nazad</li>
+					</ul>
+					<p>Razumevanje koordinatnog sistema je osnova za rad sa objektima, kamerom i animacijom.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Objekti i transformacije</h2>
+					<p>Svaki element u Three.js sceni predstavlja objekat. Objektima možemo menjati položaj, veličinu i orijentaciju. Ove tri operacije su osnova skoro svakog rada u 3D prostoru.</p>
+					<ul>
+						<li><strong>Position</strong>: određuje gde se objekat nalazi</li>
+						<li><strong>Rotation</strong>: određuje kako je objekat okrenut</li>
+						<li><strong>Scale</strong>: određuje veličinu objekta</li>
+					</ul>
+					<p>Pomoću ovih osobina možemo kontrolisati izgled i raspored svih elemenata u sceni.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Geometrija</h2>
+					<p>Da bismo prikazali neki oblik, potrebno je da definišemo geometriju. Geometrija određuje formu objekta, odnosno njegov osnovni oblik u prostoru.</p>
+					<ul>
+						<li><strong>BoxGeometry</strong>: kocka ili kvadar</li>
+						<li><strong>SphereGeometry</strong>: lopta ili sfera</li>
+						<li><strong>PlaneGeometry</strong>: ravna površina</li>
+					</ul>
+					<p>Three.js sadrži više gotovih geometrija koje su pogodne za početni rad i vežbanje.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Materijali</h2>
+					<p>Nakon definisanja oblika, objektu je potrebno dodeliti materijal. Materijal određuje kako će objekat vizuelno izgledati, odnosno koje je boje, koliko je sjajan i kako reaguje na svetlo.</p>
+					<ul>
+						<li><strong>MeshBasicMaterial</strong>: jednostavan materijal bez uticaja svetla</li>
+						<li><strong>MeshStandardMaterial</strong>: realističniji materijal koji reaguje na svetlo</li>
+						<li><strong>Wireframe</strong>: prikaz ivica objekta</li>
+					</ul>
+					<p>Kada spojimo geometriju i materijal, dobijamo vidljiv 3D objekat koji se naziva mesh.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Svetlo i kamera</h2>
+					<p>Da bi scena bila pregledna i vizuelno kvalitetna, potrebno je pravilno podesiti svetlo i kameru. Kamera predstavlja pogled korisnika na scenu, dok svetlo omogućava da se oblici i površine jasno vide.</p>
+					<p>Bez dobre kamere i dovoljno svetla čak i lepo napravljen objekat može delovati nejasno i nezanimljivo. Zato je važno naučiti kako se ova dva elementa pravilno postavljaju.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Animacija</h2>
+					<p>Jedna od velikih prednosti biblioteke Three.js jeste mogućnost animacije. Objekti mogu da se okreću, pomeraju, uvećavaju i menjaju svoje ponašanje tokom vremena.</p>
+					<p>Animacija se najčešće ostvaruje pomoću petlje za iscrtavanje koja stalno osvežava prikaz scene. Na taj način se dobija utisak kretanja u 3D prostoru.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Interakcija sa korisnikom</h2>
+					<p>Three.js omogućava da korisnik ne bude samo posmatrač, već i aktivni učesnik u radu aplikacije. Moguće je reagovati na klik mišem, pomeranje kursora, dodir i tastaturu.</p>
+					<ul>
+						<li>rotacija scene pomoću miša</li>
+						<li>klik na objekat</li>
+						<li>promena izgleda objekta pri prelasku kursora</li>
+						<li>pokretanje animacije na određenu akciju</li>
+					</ul>
+					<p>Na taj način web stranica postaje zanimljivija i modernija.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Uvoz modela i primena</h2>
+					<p>U Three.js možemo prikazivati i složenije modele napravljene u drugim programima, na primer u Blenderu. To omogućava povezivanje modelovanja i programiranja u jednom projektu.</p>
+					<p>Three.js se koristi u edukaciji, prezentaciji proizvoda, prikazu enterijera i eksterijera, interaktivnim sajtovima, muzejima, igrama i savremenim digitalnim aplikacijama. Zbog toga je veoma koristan alat za učenike koji žele da razvijaju web projekte novije generacije.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Zaključak</h2>
+					<p>Three.js je savremena i moćna biblioteka koja omogućava prikaz 3D sadržaja na webu. Učenicima pruža priliku da povežu programiranje, dizajn, prostorno razmišljanje i kreativnost.</p>
+					<p>Najvažnije je krenuti od jednostavne scene, razumeti osnovne elemente i postepeno uvoditi složenije objekte, svetla i animacije. Redovnim vežbanjem stiče se sigurnost i mogućnost izrade sve ozbiljnijih interaktivnih aplikacija.</p>
+					<div class="">
+						<strong>Preporuka:</strong> Počnite od jednostavnih primera, vežbajte redovno i postepeno razvijajte svoje 3D web projekte.
+					</div>
+				</div>
+			</div>
+
+      <div class="page text-page final-page">
+				<div class="page-content">
+					
+				</div>
+			</div>
+      <div class="page text-page final-page">
+				<div class="page-content">
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function loadApp() {
+	$('.flipbook').turn({
+		width: 922,
+		height: 600,
+		elevation: 50,
+		gradients: true,
+		autoCenter: true
+	});
+}
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+</script>
+
+</body>
+</html>

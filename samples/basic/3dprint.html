@@ -1,0 +1,222 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="sr" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="sr" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="sr" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="sr" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="sr"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<title>Osnove 3D štampe</title>
+
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+
+			<div class="page cover-page">
+				<div class="page-content cover-content">
+
+					<div class="cover-top-band">
+						<div class="logo-row">
+							<img src="pages/erasmus-logo-1.png" alt="Erasmus+" />
+							<img src="pages/fm3 logo.png" alt="Logo projekta" />
+							<img src="pages/ets.png" alt="Logo škole" />
+						</div>
+					</div>
+
+					<div class="cover-main">
+						<p class="cover-kicker">Priručnik za učenike</p>
+
+						<h1>OSNOVE 3D ŠTAMPE</h1>
+						<h3>Uvod u aditivnu proizvodnju, rad sa 3D štampačem i osnovni postupci</h3>
+						<p>Elektrotehnička škola „Nikola Tesla“, Niš</p>
+						<div class="cover-line"></div>
+
+						<div class="cover-info">
+							<p><strong>Projekat:</strong><br/> Tvorci budućnosti: 3D veštine za sutrašnji svet</p>
+							<p><strong>Napomena:</strong><br/> Ovaj priručnik je nastao kao rezultat mobilnosti u okviru Erasmus+ projekta.</p>
+						</div>
+					</div>
+
+					<div class="cover-footer">
+						<p><br/>Jelena Lukić i Dimitrije Krstić</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Šta je 3D štampa?</h2>
+					<p>3D štampa je savremeni postupak izrade predmeta sloj po sloj na osnovu digitalnog modela. Za razliku od klasične proizvodnje, gde se materijal često seče, buši ili uklanja, kod 3D štampe predmet nastaje postepenim dodavanjem materijala.</p>
+					<p>Ova tehnologija se koristi u obrazovanju, industriji, medicini, dizajnu, arhitekturi i izradi prototipova. Učenicima je posebno korisna jer povezuje kreativnost, tehničko razmišljanje i praktičan rad.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Kako funkcioniše 3D štampa?</h2>
+					<p>Proces počinje izradom ili preuzimanjem 3D modela. Taj model se zatim priprema u posebnom programu koji ga deli na slojeve i pretvara u uputstva za štampač. Nakon toga štampač sloj po sloj izrađuje fizički predmet.</p>
+					<ul>
+						<li><strong>3D model</strong>: digitalni prikaz predmeta</li>
+						<li><strong>Slicer</strong>: program koji model priprema za štampu</li>
+						<li><strong>G-code</strong>: skup komandi za rad štampača</li>
+						<li><strong>Štampa</strong>: fizička izrada predmeta sloj po sloj</li>
+					</ul>
+					<p>Svaki korak je važan jer utiče na kvalitet finalnog proizvoda.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Delovi 3D štampača</h2>
+					<p>Da bismo uspešno radili sa 3D štampačem, potrebno je da razumemo njegove osnovne delove i njihovu ulogu u procesu štampe.</p>
+					<ul>
+						<li><strong>Ekstruder</strong>: uvlači i potiskuje filament</li>
+						<li><strong>Hotend</strong>: zagreva materijal do temperature topljenja</li>
+						<li><strong>Grejana podloga</strong>: površina na kojoj nastaje predmet</li>
+						<li><strong>Ose X, Y i Z</strong>: omogućavaju kretanje glave ili podloge</li>
+					</ul>
+					<p>Razumevanje rada ovih delova pomaže pri pravilnom korišćenju i rešavanju osnovnih problema.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Materijali za 3D štampu</h2>
+					<p>U 3D štampi koriste se različiti materijali, a izbor zavisi od namene predmeta, željene čvrstoće i uslova rada. U školskim uslovima najčešće se koristi filament u obliku plastične niti.</p>
+					<ul>
+						<li><strong>PLA</strong>: jednostavan za rad i pogodan za početnike</li>
+						<li><strong>PETG</strong>: izdržljiviji i otporniji materijal</li>
+						<li><strong>TPU</strong>: savitljiv materijal</li>
+						<li><strong>ABS</strong>: čvrst, ali zahtevniji za štampu</li>
+					</ul>
+					<p>Za početne projekte najčešće je najbolji izbor PLA zbog jednostavne upotrebe i dobrih rezultata.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Priprema modela za štampu</h2>
+					<p>Nije svaki 3D model odmah spreman za štampu. Potrebno je proveriti dimenzije, debljinu zidova, stabilnost oblika i opšti izgled modela kako bi štampa bila uspešna.</p>
+					<ul>
+						<li><strong>skaliranje modela</strong>: prilagođavanje dimenzija</li>
+						<li><strong>provera debljine</strong>: da delovi ne budu pretanki</li>
+						<li><strong>orijentacija modela</strong>: određivanje položaja na podlozi</li>
+						<li><strong>podrške</strong>: dodatni oslonci za zahtevne delove</li>
+					</ul>
+					<p>Dobra priprema modela smanjuje mogućnost grešaka tokom štampe.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Slicer programi</h2>
+					<p>Slicer je program koji 3D model pretvara u slojeve i priprema ga za rad štampača. U njemu se podešavaju važni parametri koji određuju brzinu, kvalitet i stabilnost štampe.</p>
+					<ul>
+						<li><strong>Layer Height</strong>: visina sloja</li>
+						<li><strong>Infill</strong>: gustina unutrašnjeg ispuna</li>
+						<li><strong>Print Speed</strong>: brzina štampe</li>
+						<li><strong>Temperature</strong>: temperatura mlaznice i podloge</li>
+					</ul>
+					<p>Pravilna podešavanja u sliceru imaju veliki uticaj na krajnji rezultat.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Pokretanje i praćenje štampe</h2>
+					<p>Pre pokretanja štampe potrebno je proveriti da li je štampač pravilno pripremljen, da li je podloga čista i da li je filament pravilno postavljen. Početni slojevi su posebno važni jer od njih zavisi uspeh cele štampe.</p>
+					<p>Tokom rada štampača treba pratiti da li se predmet pravilno formira, da li prijanja uz podlogu i da li se materijal ravnomerno nanosi. Pravovremena kontrola može sprečiti kvarenje modela i gubitak materijala.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Najčešći problemi u štampi</h2>
+					<p>U radu sa 3D štampačem mogu se javiti različiti problemi. Njihovo prepoznavanje i razumevanje pomažu učeniku da uspešnije koristi uređaj i poboljša rezultat.</p>
+					<ul>
+						<li>loše prijanjanje prvog sloja</li>
+						<li>pomeranje modela tokom štampe</li>
+						<li>pojavljivanje niti između delova</li>
+						<li>nepravilni slojevi i neravne površine</li>
+					</ul>
+					<p>Većina problema rešava se pravilnim podešavanjem temperature, brzine, visine sloja i nivelacije podloge.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Bezbednost i održavanje</h2>
+					<p>Rad sa 3D štampačem zahteva pažnju i odgovorno ponašanje. Delovi štampača mogu biti veoma vrući, a uređaj radi duže vreme bez prekida, pa je važno poštovati osnovna pravila bezbednosti.</p>
+					<ul>
+						<li>ne dodirivati zagrejane delove tokom rada</li>
+						<li>održavati radni prostor čistim i urednim</li>
+						<li>redovno proveravati stanje podloge i mlaznice</li>
+						<li>koristiti štampač prema uputstvu proizvođača</li>
+					</ul>
+					<p>Pravilno održavanje produžava vek trajanja uređaja i poboljšava kvalitet štampe.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Primena 3D štampe</h2>
+					<p>3D štampa se koristi za izradu prototipova, edukativnih modela, ukrasnih predmeta, rezervnih delova i raznih funkcionalnih elemenata. U školskom radu posebno je korisna jer učenici mogu brzo da pretvore ideju iz digitalnog oblika u fizički predmet.</p>
+					<p>Na taj način spajaju se modelovanje, tehnika, dizajn i praktična primena. To učenicima daje bolji uvid u ceo proces savremene digitalne proizvodnje.</p>
+				</div>
+			</div>
+
+			<div class="page text-page final-page">
+				<div class="page-content">
+					<h2>Zaključak</h2>
+					<p>3D štampa je savremena i korisna tehnologija koja omogućava učenicima da povežu digitalni model i stvarni predmet. Kroz rad sa 3D štampačem razvijaju se preciznost, strpljenje, tehničko razmišljanje i kreativnost.</p>
+					<p>Najvažnije je razumeti osnovne delove procesa, pažljivo pripremiti model i pratiti rad štampača. Redovnim vežbanjem i pravilnim podešavanjem postižu se sve bolji i kvalitetniji rezultati.</p>
+					<div class="">
+						<strong>Preporuka:</strong> Počnite od jednostavnih modela, pažljivo pratite prve slojeve i postepeno uvodite složenije projekte.
+					</div>
+				</div>
+			</div>
+
+      <div class="page text-page final-page">
+				<div class="page-content">
+					
+				</div>
+			</div>
+      <div class="page text-page final-page">
+				<div class="page-content">
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function loadApp() {
+	$('.flipbook').turn({
+		width: 922,
+		height: 600,
+		elevation: 50,
+		gradients: true,
+		autoCenter: true
+	});
+}
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+</script>
+
+</body>
+</html>
